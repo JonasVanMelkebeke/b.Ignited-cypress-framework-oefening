@@ -1,0 +1,22 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework For Test - B Ignited",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress::open": "cypress open"
+  },
+  "keywords": [
+    "e2e",
+    "tests",
+    "cypress",
+    "automation",
+    "framework"
+  ],
+  "author": "Jonas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
