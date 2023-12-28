@@ -72,9 +72,15 @@ describe('Test Cases Telefoon nummers', () => {
       testDataGeneratorObj.telephoneNumberGenerateButtonClick();
 
       const expectedAmount = amount;
+      
+      cy.get(testDataGeneratorObj.elements.pvGeneratedNumbersTxt)
+    .invoke('text')
+    .then((text) => {
+      console.log('Generated Numbers Text:', text);
 
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
-
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
+      // Check if the generated numbers text includes the expected suffix repeated for the expected number of times
+      testDataGeneratorObj.pvGeneratedNumbersTxt
+        .should('include', expectedSuffix.repeat(expectedReturnedNumbers))
+    });
     })
    })

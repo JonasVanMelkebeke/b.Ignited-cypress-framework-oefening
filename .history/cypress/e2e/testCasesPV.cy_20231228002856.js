@@ -74,7 +74,7 @@ describe('Test Cases Proces Verbaal nummers', () => {
   //  const testDataGeneratorObj = new testDataGenerator();
 //
   //  testDataGeneratorObj.procesVerbaalDropdownClick();
-  //  testDataGeneratorObj.pvInputAmount.type('2');
-  //  testDataGeneratorObj.pvInputFieldYearClearButtonClick();
-//  })
+    testDataGeneratorObj.pvInputAmount.type('2');
+    testDataGeneratorObj.pvInputFieldYearClearButtonClick();
+  })
  })

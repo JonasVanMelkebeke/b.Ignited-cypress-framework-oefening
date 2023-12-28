@@ -72,9 +72,9 @@ describe('Test Cases Proces Verbaal nummers', () => {
 
   //it('[Proces Verbaal nummers] Verify functionality input field clear button is working correctly', () =>{
   //  const testDataGeneratorObj = new testDataGenerator();
-//
-  //  testDataGeneratorObj.procesVerbaalDropdownClick();
-  //  testDataGeneratorObj.pvInputAmount.type('2');
-  //  testDataGeneratorObj.pvInputFieldYearClearButtonClick();
-//  })
+
+    testDataGeneratorObj.procesVerbaalDropdownClick();
+    testDataGeneratorObj.pvInputAmount.type('2');
+    testDataGeneratorObj.pvInputFieldYearClearButtonClick();
+  })
  })

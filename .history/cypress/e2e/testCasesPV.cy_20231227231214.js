@@ -67,14 +67,6 @@ describe('Test Cases Proces Verbaal nummers', () => {
     testDataGeneratorObj.procesVerbaalDropdownClick();
     testDataGeneratorObj.pvInputAmount.type('2');
     testDataGeneratorObj.pvGenerateButtonClick();
-    testDataGeneratorObj.pvGeneratedNumbersTxt.should('include', '\n')
+    testDataGeneratorObj.pvGeneratedNumbers.should('include', '')
   })
-
-  //it('[Proces Verbaal nummers] Verify functionality input field clear button is working correctly', () =>{
-  //  const testDataGeneratorObj = new testDataGenerator();
-//
-  //  testDataGeneratorObj.procesVerbaalDropdownClick();
-  //  testDataGeneratorObj.pvInputAmount.type('2');
-  //  testDataGeneratorObj.pvInputFieldYearClearButtonClick();
-//  })
  })

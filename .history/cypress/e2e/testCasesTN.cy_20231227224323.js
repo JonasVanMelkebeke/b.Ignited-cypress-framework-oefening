@@ -66,6 +66,8 @@ describe('Test Cases Telefoon nummers', () => {
       const country = 'Belgium';
       const amount = 2;
 
+      const fs = require('fs');
+
       testDataGeneratorObj.telefoonNummersDropdownClick();
       testDataGeneratorObj.telephoneNumberCountrySelect(country);
       testDataGeneratorObj.telephoneFieldAmount.type(amount)
@@ -73,8 +75,12 @@ describe('Test Cases Telefoon nummers', () => {
 
       const expectedAmount = amount;
 
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
+      console.log(testDataGeneratorObj.telephoneGeneratedNumbersTxt);
 
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
+      const generated
+      
+      cy.get(testDataGeneratorObj.elements.pvGeneratedNumbersTxt).then((text) => {
+      console.log('Generated Numbers Text:', text);
+    });
     })
    })

@@ -60,21 +60,5 @@ describe('Test Cases Telefoon nummers', () => {
       testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', expectedAreaCode)
     })
 
-    it('[Telefoon nummers] Verify functionally input field amount is working correctly', () => {
-      const testDataGeneratorObj = new testDataGenerator();
-
-      const country = 'Belgium';
-      const amount = 2;
-
-      testDataGeneratorObj.telefoonNummersDropdownClick();
-      testDataGeneratorObj.telephoneNumberCountrySelect(country);
-      testDataGeneratorObj.telephoneFieldAmount.type(amount)
-      testDataGeneratorObj.telephoneNumberGenerateButtonClick();
-
-      const expectedAmount = amount;
-
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
-
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
-    })
+    it('[Telefoon nummers] Verify i')
    })

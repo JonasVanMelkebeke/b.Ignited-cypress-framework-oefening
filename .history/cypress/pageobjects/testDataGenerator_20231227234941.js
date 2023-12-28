@@ -10,7 +10,7 @@ class testDataGenerator {
         pvGenerateButton: () => cy.get('#\\/pv-generate-button'),
         pvGeneratedNumbers: () => cy.get('#pv-text'),
         pvGeneratedNumbersTxt: () => cy.get('#pv-text').invoke('text'),
-        //pvInputFieldYearClearButton: () => cy.get('#pv-1 #clear-button'),
+        pvInputFieldYearClearButton: () => cy.get('#pv-1 #clear-button'),
 
         //Telefoon nummers elements
         telefoonNummersDropdown: () => cy.get('.accordion-button:contains("Telefoon nummers")'),
@@ -84,9 +84,7 @@ class testDataGenerator {
         return this.elements.telephoneFieldAmount();
     }
 
-    pvInputFieldYearClearButtonClick() {
-        this.elements.pvInputFieldYearClearButton().click()
-    }
+    
 
     telephoneNumberGenerateButtonClick() {
         this.elements.telephoneNumberGenerateButton().click()

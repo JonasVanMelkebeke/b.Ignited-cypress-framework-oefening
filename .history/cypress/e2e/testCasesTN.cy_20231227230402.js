@@ -75,6 +75,6 @@ describe('Test Cases Telefoon nummers', () => {
 
       const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
 
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
+      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', )
     })
    })

@@ -64,7 +64,7 @@ describe('Test Cases Telefoon nummers', () => {
       const testDataGeneratorObj = new testDataGenerator();
 
       const country = 'Belgium';
-      const amount = 2;
+      const amount = '2';
 
       testDataGeneratorObj.telefoonNummersDropdownClick();
       testDataGeneratorObj.telephoneNumberCountrySelect(country);
@@ -72,9 +72,5 @@ describe('Test Cases Telefoon nummers', () => {
       testDataGeneratorObj.telephoneNumberGenerateButtonClick();
 
       const expectedAmount = amount;
-
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
-
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
     })
    })

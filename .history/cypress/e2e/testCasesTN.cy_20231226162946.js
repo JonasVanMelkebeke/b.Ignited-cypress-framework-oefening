@@ -60,21 +60,22 @@ describe('Test Cases Telefoon nummers', () => {
       testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', expectedAreaCode)
     })
 
-    it('[Telefoon nummers] Verify functionally input field amount is working correctly', () => {
+    it('[Telefoon nummers] Verify generate nummers when user requests 2 numbers', () => {
       const testDataGeneratorObj = new testDataGenerator();
 
       const country = 'Belgium';
-      const amount = 2;
 
-      testDataGeneratorObj.telefoonNummersDropdownClick();
-      testDataGeneratorObj.telephoneNumberCountrySelect(country);
-      testDataGeneratorObj.telephoneFieldAmount.type(amount)
-      testDataGeneratorObj.telephoneNumberGenerateButtonClick();
+      const fs = require('fs');
+      const generate = () => {
+        return 'Generated Telefoon nummers String'
+      }
+      const GeneratedString = generate();
+      const filePath = './generatedTelephoneNumbers.json';
+      const jsonData = {
+        generatedTelephoneNumbers = GeneratedString,
+      };
+      const jsonString = JSON.stringify(jsonData, null, 2);
 
-      const expectedAmount = amount;
-
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
-
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
+      
     })
    })

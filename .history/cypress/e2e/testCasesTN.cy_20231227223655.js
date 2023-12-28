@@ -73,8 +73,10 @@ describe('Test Cases Telefoon nummers', () => {
 
       const expectedAmount = amount;
 
-      const generatedString = testDataGeneratorObj.telephoneGeneratedNumbersTxt;
-
-      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '\n')
+      testDataGeneratorObj.telephoneGeneratedNumbersTxt.should('include', '+32')
+      
+      cy.get(testDataGeneratorObj.elements.pvGeneratedNumbersTxt).then((text) => {
+      console.log('Generated Numbers Text:', text);
+    });
     })
    })
